@@ -1,16 +1,12 @@
 import HeroSection from "@/components/HeroSection";
-import AboutSection from "@/components/AboutSection";
-import MenuPreview from "@/components/MenuPreview";
-import TableBooking from "@/components/TableBooking";
 import Footer from "@/components/Footer";
+import Navigation from "@/components/Navigation";
 
 const Index = () => {
   return (
     <div className="min-h-screen font-inter">
+      <Navigation />
       <HeroSection />
-      <AboutSection />
-      <MenuPreview />
-      <TableBooking />
       <Footer />
     </div>
   );

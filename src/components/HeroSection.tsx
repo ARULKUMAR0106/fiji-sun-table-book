@@ -1,11 +1,8 @@
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 import fijiHero from "@/assets/fiji-hero.jpg";
 
 const HeroSection = () => {
-  const scrollToBooking = () => {
-    document.getElementById('booking')?.scrollIntoView({ behavior: 'smooth' });
-  };
-
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image */}
@@ -29,21 +26,24 @@ const HeroSection = () => {
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <Button 
-            size="lg" 
-            variant="hero"
-            onClick={scrollToBooking}
-            className="bg-secondary hover:bg-secondary/90 text-white px-8 py-3 text-lg font-medium shadow-warm transform hover:scale-105 transition-all duration-300"
-          >
-            Reserve Your Table
-          </Button>
-          <Button 
-            size="lg" 
-            variant="outline"
-            className="border-2 border-white/80 text-white hover:bg-white/10 px-8 py-3 text-lg font-medium backdrop-blur-sm"
-          >
-            View Menu
-          </Button>
+          <Link to="/booking">
+            <Button 
+              size="lg" 
+              variant="hero"
+              className="bg-secondary hover:bg-secondary/90 text-white px-8 py-3 text-lg font-medium shadow-warm transform hover:scale-105 transition-all duration-300"
+            >
+              Reserve Your Table
+            </Button>
+          </Link>
+          <Link to="/menu">
+            <Button 
+              size="lg" 
+              variant="outline"
+              className="border-2 border-white/80 text-white hover:bg-white/10 px-8 py-3 text-lg font-medium backdrop-blur-sm"
+            >
+              View Menu
+            </Button>
+          </Link>
         </div>
 
         {/* Floating Info Cards */}
