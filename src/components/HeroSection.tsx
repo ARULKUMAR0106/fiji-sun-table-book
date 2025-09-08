@@ -25,7 +25,7 @@ const HeroSection = () => {
           featuring traditional Indian delicacies and tropical island flavors
         </p>
 
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+        <div className="flex flex-col sm:flex-row py-12 gap-4 justify-center items-center">
           <Link to="/booking">
             <Button 
               size="lg" 
@@ -39,7 +39,7 @@ const HeroSection = () => {
             <Button 
               size="lg" 
               variant="outline"
-              className="border-2 border-white/80 text-white hover:bg-white/10 px-8 py-3 text-lg font-medium backdrop-blur-sm"
+              className="border-2 border-white/80 text-black hover:bg-white/10 px-8 py-4 text-lg font-medium backdrop-blur-sm"
             >
               View Menu
             </Button>
@@ -47,7 +47,7 @@ const HeroSection = () => {
         </div>
 
         {/* Floating Info Cards */}
-        <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 flex gap-6 text-sm">
+        <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 flex py-16 gap-4 text-sm">
           <div className="bg-white/10 backdrop-blur-md rounded-lg px-4 py-2">
             <span className="text-golden font-medium">Open Daily</span>
             <p>11AM - 11PM</p>
