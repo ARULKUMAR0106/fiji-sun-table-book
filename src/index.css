@@ -2,41 +2,66 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Fiji Tropical Restaurant Design System - Sunny tropical theme */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Tropical Background & Base Colors */
+    --background: 45 100% 98%;
+    --foreground: 210 25% 15%;
 
+    /* Card & Surface Colors */
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 210 25% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 210 25% 15%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Primary - Ocean Blue */
+    --primary: 199 89% 48%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Secondary - Sunset Coral */
+    --secondary: 14 91% 60%;
+    --secondary-foreground: 0 0% 100%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Tropical Green */
+    --tropical: 160 84% 39%;
+    --tropical-foreground: 0 0% 100%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Golden Sand */
+    --golden: 45 93% 58%;
+    --golden-foreground: 0 0% 100%;
+
+    /* Muted & Accent */
+    --muted: 45 50% 95%;
+    --muted-foreground: 210 20% 50%;
+
+    --accent: 45 100% 92%;
+    --accent-foreground: 210 25% 15%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 45 40% 88%;
+    --input: 45 40% 88%;
+    --ring: 199 89% 48%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
+
+    /* Tropical Gradients */
+    --gradient-sunset: linear-gradient(135deg, hsl(14 91% 60%), hsl(35 91% 65%), hsl(45 93% 58%));
+    --gradient-ocean: linear-gradient(135deg, hsl(199 89% 48%), hsl(186 77% 57%));
+    --gradient-tropical: linear-gradient(135deg, hsl(160 84% 39%), hsl(175 70% 50%));
+    --gradient-hero: linear-gradient(135deg, hsl(199 89% 48%) 0%, hsl(186 77% 57%) 40%, hsl(14 91% 60%) 100%);
+    
+    /* Shadows with tropical colors */
+    --shadow-tropical: 0 10px 30px -10px hsl(199 89% 48% / 0.3);
+    --shadow-warm: 0 5px 20px -5px hsl(14 91% 60% / 0.2);
+    --shadow-elegant: 0 20px 60px -10px hsl(199 89% 48% / 0.4);
+
+    /* Smooth transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
     --sidebar-background: 0 0% 98%;
 
